@@ -11,7 +11,7 @@ if __name__ == "__main__":
         if j % 1000 == 20:
             print(j)
         extension = "val"
-        if j < 0.8 * args.num_files:
+        if j < 0.8 * int(args.num_files):
             extension = "train"
 
         with open(f"data/{extension}/{j+1}.txt", "w") as f:
